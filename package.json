@@ -15,7 +15,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd client && npm start",
     "build": "cd client && npm install && npm run-script build",
-    "install": "cd client && npm",
     "deploy": "cp -a client/build/. public/",
     "heroku-postbuild": "npm run-script build && npm deploy"
   },
