@@ -21,4 +21,8 @@ class ApplicationController < ActionController::API
       ]
       }, status: :bad_request
   end
+
+  def frontend_index_html
+    render file: 'public/index.html'
+  end
 end

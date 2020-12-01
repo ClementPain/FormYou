@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd client && npm start",
+    "build": "cd client && npm install && npm run-script build",
+    "install": "cd client && npm",
+    "deploy": "cp -a client/build/. public/",
+    "heroku-postbuild": "npm run-script build && npm deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClementPain/FormYou.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClementPain/FormYou/issues"
+  },
+  "homepage": "https://github.com/ClementPain/FormYou#readme"
+}

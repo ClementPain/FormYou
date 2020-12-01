@@ -17,4 +17,7 @@ Rails.application.routes.draw do
       registrations: 'registrations'
     }
 
+  get '*path', to: 'application#frontend_index_html', constraints: lambda { |request| !request.xhr? && request.format.html?
+}
+
 end
